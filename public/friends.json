@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://i.pravatar.cc/150?u=david",
+    "email": "david.kim@tech.com",
+    "days_since_contact": 42,
+    "status": "overdue",
+    "tags": ["WORK"],
+    "bio": "Former colleague and a great mentor in web development.",
+    "goal": 30,
+    "next_due_date": "Mar 15, 2026"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://i.pravatar.cc/150?u=emma",
+    "email": "emma.w@family.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["FAMILY"],
+    "bio": "My younger cousin. We usually talk about photography and travel.",
+    "goal": 7,
+    "next_due_date": "Apr 18, 2026"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://i.pravatar.cc/150?u=lisa",
+    "email": "lisa.n@uni.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["UNI"],
+    "bio": "University friend. Both of us are into marathon running.",
+    "goal": 14,
+    "next_due_date": "Apr 15, 2026"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://i.pravatar.cc/150?u=james",
+    "email": "james.travels@gmail.com",
+    "days_since_contact": 65,
+    "status": "overdue",
+    "tags": ["HOBBY", "TRAVEL"],
+    "bio": "Met during a hiking trip in Nepal. Great travel buddy.",
+    "goal": 30,
+    "next_due_date": "Feb 10, 2026"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://i.pravatar.cc/150?u=sarah",
+    "email": "sarah.c@design.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["WORK"],
+    "bio": "Talented UI designer I worked with last year on a Fintech app.",
+    "goal": 14,
+    "next_due_date": "Apr 22, 2026"
+  },
+  {
+    "id": 6,
+    "name": "Mike Ross",
+    "picture": "https://i.pravatar.cc/150?u=mike",
+    "email": "mike.ross@legal.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["COLLEGE"],
+    "bio": "College roommate. We share a passion for chess and law dramas.",
+    "goal": 15,
+    "next_due_date": "Apr 14, 2026"
+  },
+  {
+    "id": 7,
+    "name": "Sophia Garcia",
+    "picture": "https://i.pravatar.cc/150?u=sophia",
+    "email": "sophia.g@creative.net",
+    "days_since_contact": 1,
+    "status": "on-track",
+    "tags": ["NEIGHBOR"],
+    "bio": "Lives next door. We often trade gardening tips and tools.",
+    "goal": 7,
+    "next_due_date": "Apr 20, 2026"
+  },
+  {
+    "id": 8,
+    "name": "Alex Johnson",
+    "picture": "https://i.pravatar.cc/150?u=alex",
+    "email": "alex.j@fitness.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["GYM"],
+    "bio": "My personal trainer from two years ago. Great motivator.",
+    "goal": 20,
+    "next_due_date": "Apr 01, 2026"
+  },
+  {
+    "id": 9,
+    "name": "Olivia Martinez",
+    "picture": "https://i.pravatar.cc/150?u=olivia",
+    "email": "olivia.m@music.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["FRIEND"],
+    "bio": "Plays guitar in a local band. We met at a jazz concert.",
+    "goal": 14,
+    "next_due_date": "Apr 19, 2026"
+  },
+  {
+    "id": 10,
+    "name": "Ryan O'Brien",
+    "picture": "https://i.pravatar.cc/150?u=ryan",
+    "email": "ryan.ob@sports.com",
+    "days_since_contact": 11,
+    "status": "almost due",
+    "tags": ["COLLEGE", "SPORTS"],
+    "bio": "Used to play football together in the varsity team.",
+    "goal": 14,
+    "next_due_date": "Apr 16, 2026"
+  }
+]

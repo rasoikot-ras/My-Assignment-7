@@ -3,17 +3,25 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router/dom';
 import { createBrowserRouter } from 'react-router';
+import RootLayout from './layout/RootLayout';
 
 const router = createBrowserRouter(
   [
     {
       path: '/',
-      element: <h2>Homepage</h2>
+      element: <RootLayout />,
+      children: [
+        {
+          index: true,
+          element: <h2>Homepage</h2>
+        },
+        {
+          path: "/apps",
+          element: <h2>Apps</h2>
+        },
+      ],
+      errorElement: <h2>This page not found</h2>
     },
-    {
-      path: '/',
-      element: <h2>All Friends</h2>
-    }
   ]
 )
 
