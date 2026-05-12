@@ -72,43 +72,43 @@ const FriendDetails = () => {
                     <div className="lg:col-span-8 space-y-6">
                         
                         
-                        <div className="grid grid-cols-3 gap-4">
-                            <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
-                                <h3 className="text-3xl font-black text-gray-800 tracking-tighter">{friend.days_since_contact}</h3>
-                                <p className="text-gray-400 text-lg mt-2">Days Since Contact</p>
+                        <div className="grid grid-cols-3 gap-2 md:gap-4">
+                            <div className="bg-white py-3 md:py-10 rounded-xl border border-gray-100 shadow-sm text-center">
+                                <h3 className="text-2xl md:text-3xl font-black text-gray-800 tracking-tighter">{friend.days_since_contact}</h3>
+                                <p className="text-gray-400 text-[10px] md:text-lg mt-1 md:mt-2">Days Since Contact</p>
                             </div>
-                            <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
-                                <h3 className="text-3xl font-black text-gray-800 tracking-tighter">{friend.goal}</h3>
-                                <p className="text-gray-400 text-lg mt-2">Goal (Days)</p>
+                            <div className="bg-white py-3 md:py-10  rounded-xl border border-gray-100 shadow-sm text-center">
+                                <h3 className="text-2xl md:text-3xl font-black text-gray-800 tracking-tighter">{friend.goal}</h3>
+                                <p className="text-gray-400 text-[10px] md:text-lg mt-1 md:mt-2">Goal (Days)</p>
                             </div>
-                            <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
-                                <h3 className="text-[22px] font-black text-gray-800 tracking-tighter">{friend.next_due_date}</h3>
-                                <p className="text-gray-400 text-lg mt-2 tracking-widest">Next Due</p>
+                            <div className="bg-white py-3 md:py-10  rounded-xl border border-gray-100 shadow-sm text-center">
+                                <h3 className="text-lg md:text-[22px] font-black text-gray-800 tracking-tighter">{friend.next_due_date}</h3>
+                                <p className="text-gray-400 text-[10px] md:text-lg mt-1 md:mt-2 tracking-widest">Next Due</p>
                             </div>
                         </div>
 
                         
-                        <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm flex justify-between items-center">
+                        <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm md:flex md:justify-between items-center">
                             <div>
                                 <h4 className="font-medium text-gray-700 text-xl tracking-tight mb-4">Relationship Goal</h4>
                                 <p className="text-lg text-gray-400">Connect every <span className="font-black text-gray-900">{friend.goal} days</span></p>
                             </div>
-                            <button className="bg-gray-50 px-5 py-2 rounded-lg text-[10px] font-black text-gray-500 border border-gray-100 hover:bg-gray-100 transition-all">Edit</button>
+                            <button className="bg-gray-50 px-5 py-2 rounded-lg text-[14px] font-black text-gray-500 border border-gray-100 hover:bg-gray-100 transition-all mt-4 md:mt-0">Edit</button>
                         </div>
 
                         
                         <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
                             <h4 className="font-bold text-gray-700 text-sm mb-8 tracking-tight">Quick Check-In</h4>
-                            <div className="grid grid-cols-3 gap-6">
-                                <button onClick={() => handleAction('Call')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-6">
+                                <button onClick={() => handleAction('Call')} className="py-3 md:py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaPhone className="text-2xl text-gray-700" />
                                     <span className="text-base font-black text-gray-500">Call</span>
                                 </button>
-                                <button onClick={() => handleAction('Text')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
+                                <button onClick={() => handleAction('Text')} className="py-3 md:py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaMessage className="text-2xl text-gray-700" />
                                     <span className="text-base font-black text-gray-500">Text</span>
                                 </button>
-                                <button onClick={() => handleAction('Video')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
+                                <button onClick={() => handleAction('Video')} className="py-3 md:py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaVideo className="text-2xl text-gray-700" />
                                     <span className="text-base font-black text-gray-500">Video</span>
                                 </button>
