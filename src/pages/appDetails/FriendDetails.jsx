@@ -48,21 +48,21 @@ const FriendDetails = () => {
                             <img src={friend.picture} className="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-2 border-gray-50" alt={friend.name} />
                             <h2 className="text-xl font-bold text-gray-800 tracking-tight">{friend.name}</h2>
                             <div className="flex flex-col items-center gap-2 my-3">
-                                <span className="bg-[#FF4D4D] text-white text-[9px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Overdue</span>
-                                <span className="bg-[#E7F3EF] text-[#244235] text-[9px] font-black px-4 py-1 rounded-full uppercase tracking-widest">Family</span>
+                                <span className="bg-[#FF4D4D] text-white text-[10px] font-black px-4 py-1 rounded-full tracking-widest">{friend.status}</span>
+                                <span className="bg-[#E7F3EF] text-[#244235] text-[10px] font-black px-4 py-1 rounded-full  tracking-widest">{friend.tags}</span>
                             </div>
                             <p className="text-gray-500 italic text-[13px] mb-4">"{friend.bio}"</p>
-                            <p className="text-gray-400 text-[10px] font-bold uppercase tracking-wider">Preferred: email</p>
+                            <p className="text-gray-400 text-[12px] font-bold  tracking-wider">Preferred: <span className="text-gray-600">{friend.email}</span></p>
                         </div>
 
                         <div className="space-y-2">
-                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-gray-700 text-[10px] uppercase tracking-widest shadow-sm hover:bg-gray-50">
+                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-gray-700 text-[10px] tracking-widest shadow-sm hover:bg-gray-50">
                                 <FaClock className="text-gray-400"/> Snooze 2 Weeks
                             </button>
-                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-gray-700 text-[10px] uppercase tracking-widest shadow-sm hover:bg-gray-50">
+                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-gray-700 text-[10px] tracking-widest shadow-sm hover:bg-gray-50">
                                 <FaBoxArchive className="text-gray-400"/> Archive
                             </button>
-                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-[#FF4D4D] text-[10px] uppercase tracking-widest shadow-sm hover:bg-red-50">
+                            <button className="w-full py-4 bg-white border border-gray-100 rounded-lg flex items-center justify-center gap-3 font-bold text-[#FF4D4D] text-[10px] tracking-widest shadow-sm hover:bg-red-50">
                                 <FaTrash/> Delete
                             </button>
                         </div>
@@ -75,42 +75,42 @@ const FriendDetails = () => {
                         <div className="grid grid-cols-3 gap-4">
                             <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                                 <h3 className="text-3xl font-black text-gray-800 tracking-tighter">{friend.days_since_contact}</h3>
-                                <p className="text-gray-400 text-[10px] font-bold uppercase mt-2 tracking-widest">Days Since Contact</p>
+                                <p className="text-gray-400 text-[10px] font-bold mt-2 tracking-widest">Days Since Contact</p>
                             </div>
                             <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                                 <h3 className="text-3xl font-black text-gray-800 tracking-tighter">{friend.goal}</h3>
-                                <p className="text-gray-400 text-[10px] font-bold uppercase mt-2 tracking-widest">Goal (Days)</p>
+                                <p className="text-gray-400 text-[10px] font-bold mt-2 tracking-widest">Goal (Days)</p>
                             </div>
                             <div className="bg-white py-10 rounded-xl border border-gray-100 shadow-sm text-center">
-                                <h3 className="text-[22px] font-black text-gray-800 uppercase tracking-tighter">Feb 27, 2026</h3>
-                                <p className="text-gray-400 text-[10px] font-bold uppercase mt-2 tracking-widest">Next Due</p>
+                                <h3 className="text-[22px] font-black text-gray-800 tracking-tighter">{friend.next_due_date}</h3>
+                                <p className="text-gray-400 text-[10px] font-bold mt-2 tracking-widest">Next Due</p>
                             </div>
                         </div>
 
                         
                         <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm flex justify-between items-center">
                             <div>
-                                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-tight">Relationship Goal</h4>
-                                <p className="text-sm text-gray-400">Connect every <span className="font-black text-gray-900">30 days</span></p>
+                                <h4 className="font-bold text-gray-700 text-sm tracking-tight">Relationship Goal</h4>
+                                <p className="text-sm text-gray-400">Connect every <span className="font-black text-gray-900">{friend.goal} days</span></p>
                             </div>
-                            <button className="bg-gray-50 px-5 py-2 rounded-lg text-[10px] font-black uppercase text-gray-500 border border-gray-100 hover:bg-gray-100 transition-all">Edit</button>
+                            <button className="bg-gray-50 px-5 py-2 rounded-lg text-[10px] font-black text-gray-500 border border-gray-100 hover:bg-gray-100 transition-all">Edit</button>
                         </div>
 
                         
                         <div className="bg-white p-8 rounded-xl border border-gray-100 shadow-sm">
-                            <h4 className="font-bold text-gray-700 text-sm mb-8 uppercase tracking-tight">Quick Check-In</h4>
+                            <h4 className="font-bold text-gray-700 text-sm mb-8 tracking-tight">Quick Check-In</h4>
                             <div className="grid grid-cols-3 gap-6">
                                 <button onClick={() => handleAction('Call')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaPhone className="text-2xl text-gray-700" />
-                                    <span className="text-[10px] font-black uppercase text-gray-500 tracking-widest">Call</span>
+                                    <span className="text-[10px] font-black text-gray-500 tracking-widest">Call</span>
                                 </button>
                                 <button onClick={() => handleAction('Text')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaMessage className="text-2xl text-gray-700" />
-                                    <span className="text-[10px] font-black uppercase text-gray-500 tracking-widest">Text</span>
+                                    <span className="text-[10px] font-black text-gray-500 tracking-widest">Text</span>
                                 </button>
                                 <button onClick={() => handleAction('Video')} className="py-10 bg-[#F9FBFA] rounded-xl flex flex-col items-center gap-4 hover:bg-gray-100 transition-all group">
                                     <FaVideo className="text-2xl text-gray-700" />
-                                    <span className="text-[10px] font-black uppercase text-gray-500 tracking-widest">Video</span>
+                                    <span className="text-[10px] font-black text-gray-500 tracking-widest">Video</span>
                                 </button>
                             </div>
                         </div>
