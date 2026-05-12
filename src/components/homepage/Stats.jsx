@@ -3,7 +3,7 @@ const Stats = ({ friends = [] }) => {
         { label: "Total Friends", val: friends.length },
         { label: "On Track", val: friends.filter(f => f.status.toLowerCase() === 'on-track').length },
         { label: "Need Attention", val: friends.filter(f => f.status.toLowerCase() !== 'on-track').length },
-        { label: "Monthly Interactions", val: 12 }
+        { label: "Interactions This Month", val: 12 }
     ];
 
     return (
@@ -12,7 +12,7 @@ const Stats = ({ friends = [] }) => {
                 <div key={i} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm text-center">
                     <p className="text-4xl font-black text-[#1a2e1a] mb-1">{item.val}</p>
                     
-                    <p className="text-gray-400 text-[10px] font-bold tracking-widest">{item.label}</p>
+                    <p className="text-[#64748B] text-[18px]">{item.label}</p>
                 </div>
             ))}
         </section>
