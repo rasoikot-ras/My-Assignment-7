@@ -1,32 +1,25 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { RouterProvider } from "react-router-dom";
+import { Toaster } from 'react-hot-toast'; 
+import router from "./router/Router"; 
+import { TimelineProvider } from "./context/TimelineContext"; 
 import './index.css';
-import { RouterProvider } from 'react-router/dom';
-import { createBrowserRouter } from 'react-router';
-import RootLayout from './layout/RootLayout';
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <RootLayout />,
-      children: [
-        {
-          index: true,
-          element: <h2>Homepage</h2>
-        },
-        {
-          path: "/apps",
-          element: <h2>Apps</h2>
-        },
-      ],
-      errorElement: <h2>This page not found</h2>
-    },
-  ]
-)
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    
+    <TimelineProvider>
+      
+      
+      <RouterProvider router={router} />
+      
+      
+      <Toaster 
+        position="top-center"
+        reverseOrder={false}
+      />
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+    </TimelineProvider>
+  </React.StrictMode>
 );
