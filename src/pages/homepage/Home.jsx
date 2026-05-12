@@ -43,7 +43,7 @@ const Home = () => {
             <Stats friends={friends} />
             
             <div className="mt-12">
-                <h2 className="text-2xl font-black text-gray-800 mb-8">All Connections</h2>
+                <h2 className="text-2xl font-black text-gray-800 mb-8">Your Friends</h2>
                 
                 {friends.length > 0 ? (
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

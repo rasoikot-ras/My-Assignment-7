@@ -1,6 +1,6 @@
 const Banner = () => (
     <div className="text-center py-16 px-4">
-        <h1 className="text-5xl font-black text-[#1a2e1a] mb-4">Friends to keep close in your life</h1>
+        <h1 className="font-bold text-5xl text-[#1F2937] mb-4">Friends to keep close in your life</h1>
         <p className="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
             Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.
         </p>
