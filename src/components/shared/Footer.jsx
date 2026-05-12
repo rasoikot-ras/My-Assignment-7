@@ -10,7 +10,7 @@ const Footer = () => (
             </p>
             
             <div className="mb-16">
-                <p className="font-bold text-sm mb-6 uppercase tracking-widest">Social Links</p>
+                <p className="font-medium text-xl mb-6 tracking-widest">Social Links</p>
                 <div className="flex justify-center gap-4">
                     <a href="#" className="bg-white text-[#244235] p-3 rounded-full hover:scale-110 transition-transform"><FaInstagram size={18}/></a>
                     <a href="#" className="bg-white text-[#244235] p-3 rounded-full hover:scale-110 transition-transform"><FaFacebookF size={18}/></a>
