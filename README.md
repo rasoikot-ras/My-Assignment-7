@@ -1,16 +1,28 @@
-# React + Vite
+#  KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**KeenKeeper** is a personal relationship management tool designed to help you nurture and maintain meaningful connections with your friends and network. It provides a visual and organized way to track your social interactions and stay on top of your relationship goals.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+I have built this project using a modern tech stack to ensure a fast, responsive, and pixel-perfect user experience:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Frontend Library:** React.js (Vite)
+*   **Styling:** Tailwind CSS
+*   **Iconography:** React Icons
+*   **Routing:** React Router DOM
+*   **Data Structure:** JSON-based Mock Data Integration
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Key Features
+
+### 1. Friendship Analytics 
+Visualizes your interaction patterns (Calls, Texts, and Video chats) through intuitive charts. This helps users understand their social distribution and where they are investing their time.
+
+### 2. Relationship Goal Management 
+Allows users to set specific contact goals for each friend. The app provides a clear status on whether you are on track or overdue for a catch-up.
+
+### 3. Smart Interaction Timeline 
+A dedicated history and timeline view that tracks past interactions and calculates the "Next Due" date for future connections, ensuring no important relationship is ever neglected.
